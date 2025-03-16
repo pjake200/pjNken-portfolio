@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PJ & KEN</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h2 {
+            color: #4A90E2;
+        }
+        .nav {
+            background-color: #4A90E2;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .iframe-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        iframe {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px; 
+        }
+        .profile {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(45% - 20px);
+            margin-bottom: 20px;
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .profile:hover {
+            transform: scale(1.02);
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border: 3px solid #4A90E2;
+        }
+        .profile h2 {
+            margin: 10px 0;
+            color: #4A90E2;
+        }
+        .profile p {
+            color: #555;
+        }
+        .profile a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .about {
+            display: none;
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .about:target {
+            display: block;
+        }
+        .contact {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact a {
+            text-decoration: none;
+            color: #4A90E2;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .profile {
+                width: 100%;
+            }
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4A90E2;
+            color: white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2><strong>PJ and Ken's Portfolio</strong></h2>
+    </center>
+      
+    <div class="nav">
+        <a href="#person1">PJ</a>
+        <a href="#person2">Ken</a>
+    </div>
+  
+    <div class="container">
+        <div class="profile" id="person1">
+            <a href="#about1">
+                <img src="pfp.jpg" alt="Person 1">
+                <h2>Magaling, Paul Jake A.</h2>
+                <p>Age: 20</p>
+                <p>Address: GK Lorega, C.C</p>
+            </a>
+        </div>
+        
+        <div class="profile" id="person2">
+            <a href="#about2">
+                <img src="kenpfp.jpg" alt="Person 2">
+                <h2>Jagmoc, Ken Luis A.</h2>
+                <p>Age: 20</p>
+                <p>Address: Sitio Pang-pang lanog kalunasan, C.C</p>
+            </a>
+        </div>
+    </div>
+    
+    <div class="iframe-container">
+        <h2>School Address</h2>
+        <iframe width="100%" height="300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.591846881922!2d123.89343661022883!3d10.294432889784117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1742117143134!5m2!1sen!2sph" title="Cebu Eastern College Location" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="about" id="about1">
+        <h3>About PJ</h3>
+        <p>An aspiring artist who enjoys bringing ideas to life through visual and literacy storytelling. Loves working on creative projects and collaborating with other artists.</p>
+      
+        <h4>Interest</h4>
+        <ul>
+            <li>Graphic Design</li>
+            <li>Art and Poetry</li>
+        </ul>
+        <h4>Music</h4>
+        <iframe width="240" height="135" src="https://www.youtube.com/embed/6YwWKn6k0Mg?si=12QSu7cGlIIdSvUy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <div class="contact">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:jakemagaling5@gmail.com">jakemagaling5@gmail.com</a></p>
+            <h3>Socmeds:</h3>
+            <a href="https://www.instagram.com/yoijeiku/p/DEVycimTihJ/"><img src="ig.webp" alt="instagram" style="width:42px;height:42px;"></a>
+            <a href="https://www.threads.net/@yoijeiku"><img src="threads.jpg" alt="threads" style="width: 45px;height: 42px;"> </a>
+            <a href="https://www.facebook.com/yoijeiku"><img src="fb.jpg" alt="facebook" style="width: 45px; height: 45px;"> </a>
+        </div>
+        <center><a href="PJresume.pdf" download>Download PJ's Resume</a></center>
+        <a href="#">Back to Profiles</a>
+    </div>
+        
+    <div class="about" id="about2">
+        <h3>About Ken</h3>
+        <p>A passionate web developer with a love for creating beautiful and functional websites. Enjoys learning new technologies and sharing knowledge with others.</p>
+       
+        <h4>Interest</h4>
+        <ul>
+            <li>Traveling</li>
+            <li>Photography</li>
+        </ul>
+        <h4>Coding and Programming</h4>
+        <iframe width="240" height="135" src="https://www.youtube.com/embed/qKoajPPWpmo?si=qzpb6IQCKU-RAg6p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <div class="contact">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:Kenluis.2134@gmail.com">Kenluis.2134@gmail.com</a></p>
+            <h6>Socmeds</h6>
+            <a href="https://www.instagram.com/ken_lj.14/"><img src="ig.webp" alt="instagram" style="width:42px;height:42px;"></a>
+            <a href="https://www.facebook.com/ken.luis.7777"><img src="fb.jpg" alt="facebook" style="width: 45px; height: 45px;"> </a>
+        </div>
+       <center> <a href="Jagmoc.pdf" download>Download Ken's Resume</a> </center>
+        <a href="#">Back to Profiles</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 PJ and Ken. All rights reserved.</p>
+    </footer>
+</body>
+</html>
